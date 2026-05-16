@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tanaya Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* The overlay background (30% opacity / 70% transparent) */
+    .cert-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* 30% background opacity */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    /* Displays the modal when its ID is targeted */
+    .cert-modal:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Small size certificate box */
+    .cert-modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      max-width: 500px; /* Small, controlled size */
+      width: 90%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    /* Certificate image scaling */
+    .cert-modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* Close button styling */
+    .cert-close {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background: #333;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="floating-nav">
+
+    <a href="#home"><i class="fa-solid fa-house"></i></a>
+
+    <a href="#about"><i class="fa-solid fa-user"></i></a>
+
+    <a href="#projects"><i class="fa-solid fa-code"></i></a>
+
+    <a href="#skills"><i class="fa-solid fa-lightbulb"></i></a>
+
+    <a href="#certificates"><i class="fa-solid fa-certificate"></i></a>
+
+    <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+
+  </div>
+
+  <header>
+
+    <nav class="navbar">
+
+      <h2 class="logo">Tanaya.</h2>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#certificates">Certificates</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>
+        Hi, I'm <span>Tanaya Abhay Balwir</span>
+      </h1>
+
+      <h3>
+        AIML Student | Web Developer | Designer
+      </h3>
+
+      <p>
+        Creating futuristic and premium digital experiences with modern UI design and creativity.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#projects" class="btn">View Projects</a>
+
+        <a href="#about" class="btn-outline">About Me</a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <div class="image-box">
+
+        <img src="C:\Users\Prajwal\Desktop\TB.jpeg" alt="Tanaya">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="about-image">
+
+      <img src="C:\Users\Prajwal\Desktop\TB.jpeg" alt="About">
+
+    </div>
+
+    <div class="about-text">
+
+      <h2>About Me</h2>
+
+      <p>
+        I am Tanaya Abhay Balwir, a hardworking first-year BTech student specializing in Artificial Intelligence and Machine Learning.
+        Driven by a passion for solving complex problems, I eagerly embrace challenges that push the boundaries of my technical skills.
+        I thrive in environments that allow me to channel my creativity into innovative, data-driven solutions.
+        Committed to continuous growth, I am eager to collaborate on projects that merge analytical thinking with creative design.
+        As I build my foundation in AIML, I look forward to contributing fresh perspectives and impactful ideas to the tech community.
+      </p>
+
+      <div class="counter-box">
+
+        <div class="counter-card">
+          <h3>4</h3>
+          <p>Major Projects</p>
+        </div>
+
+        <div class="counter-card">
+          <h3>5+</h3>
+          <p>Skills</p>
+        </div>
+
+        <div class="counter-card">
+          <h3>8+</h3>
+          <p>Certificates</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="projects" id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+
+        <img src="C:\Users\Prajwal\Desktop\ar.jpeg" alt="Portfolio Website">
+
+        <div class="project-content">
+
+          <h3>AR-Based Miniature House Visualization System</h3>
+
+          <p>
+            An AR-Based Miniature House Visualization System uses Augmented Reality to display a 3D model of a house in real-world space, helping users visualize designs before construction.
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="C:\Users\Prajwal\Desktop\pathole.jpeg" alt="AI Chatbot">
+
+        <div class="project-content">
+
+          <h3>Pathhole Detector and Filler</h3>
+
+          <p>
+            An Automated Pothole Detection Prototype is a smart system that detects road potholes automatically using sensors or cameras to improve safety and maintenance.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="C:\Users\Prajwal\Desktop\uber.jpeg" alt="Food Delivery App">
+
+        <div class="project-content">
+
+          <h3>Uber trip analysis</h3>
+
+          <p>
+            Uber Trip Analysis is the process of examining ride data (distance, time, fares, demand) to identify patterns, optimize routes, and improve decision-making in Data Analytics.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="skills" id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML & CSS</h3>
+        <p>Responsive website designing.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive and dynamic UI.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <p>Programming and AI logic building.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-c"></i>
+        <h3>C Program</h3>
+        <p>Strong programming fundamentals.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-unity"></i>
+        <h3>Unity</h3>
+        <p>AR/VR and game development.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-chart-column"></i>
+        <h3>Power BI</h3>
+        <p>Dashboard and data visualization.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Oracle</h3>
+        <p>Database management system.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="certificates" id="certificates">
+
+    <h2 class="title">Certificates</h2>
+
+    <div class="certificate-container">
+
+      <div class="certificate-card">
+        <h3>AI Fluency for Students</h3>
+        <p>Microsoft</p>
+        <a href="#cert1"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+
+      <div class="certificate-card">
+        <h3>AI Fundamental</h3>
+        <p>Microsoft</p>
+        <a href="#cert2"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Claude 101</h3>
+        <p>Anthropic</p>
+        <a href="#cert3"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+
+      <div class="certificate-card">
+        <h3>JavaScript</h3>
+        <p>Frontend Development</p>
+        <a href="#cert4"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Data visualization</h3>
+        <p>Frontend Development</p>
+        <a href="#cert5"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div id="cert1" class="cert-modal">
+    <div class="cert-modal-content">
+      <a href="#certificates" class="cert-close">&times;</a>
+      <img src="C:\Users\Prajwal\Desktop\certificate\t_certificate\AI Fluency for student.jpeg" alt="AI Fluency for Students">
+    </div>
+  </div>
+
+  <div id="cert2" class="cert-modal">
+    <div class="cert-modal-content">
+      <a href="#certificates" class="cert-close">&times;</a>
+      <img src="C:\Users\Prajwal\Desktop\certificate\t_certificate\AI Fundamentals.jpeg" alt="AI Fundamental">
+    </div>
+  </div>
+
+  <div id="cert3" class="cert-modal">
+    <div class="cert-modal-content">
+      <a href="#certificates" class="cert-close">&times;</a>
+      <img src="C:\Users\Prajwal\Desktop\certificate\t_certificate\cloude 101.jpeg" alt="Claude 101">
+    </div>
+  </div>
+
+  <div id="cert4" class="cert-modal">
+    <div class="cert-modal-content">
+      <a href="#certificates" class="cert-close">&times;</a>
+      <img src="C:\Users\Prajwal\Desktop\certificate\t_certificate\JavaScript.jpeg" alt="JavaScript">
+    </div>
+  </div>
+
+  <div id="cert5" class="cert-modal">
+    <div class="cert-modal-content">
+      <a href="#certificates" class="cert-close">&times;</a>
+      <img src="C:\Users\Prajwal\Desktop\certificate\t_certificate\Importance of Data Visualization.jpeg" alt="Data Visualization">
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <div class="contact-card">
+
+      <a href="#">
+        <i class="fa-solid fa-envelope"></i>
+        tanayabalwir0914@gmail.com
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+        tanuu_1409
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-linkedin"></i>
+        Tanaya Balwir
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-github"></i>
+        tanayabalwir0914
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
